@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {useEffect, useState} from 'react';
+import Koenigsegg from './images/Koenigsegg.png';
+import Clock from './Clock.js';
 
 function App() {
+  const [value, setValue] = useState(false);
+
+  useEffect(() => {
+    console.log("Value Updated")
+  }, [value])
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>Testing Goku</p>
+      <button onClick = { () => setValue(!value)}>Click to change boolean value</button>
+      <p>Is Goku stronger than Vegeta? {value.toString()}</p>
+      <img className='koenigsegg-image' src = {Koenigsegg} alt = "Koenigsegg picure"/>
+
+      <Clock />
+    </>
   );
 }
 
