@@ -4,6 +4,8 @@ import Koenigsegg from './images/Koenigsegg.png';
 import Clock from './Clock.js';
 import Import from './Import.js'
 import LoginControl from './LoginControl.js'
+import Blog from './Blog.js'
+
 
 function App() {
   const [value, setValue] = useState(false);
@@ -12,6 +14,22 @@ function App() {
     firstname : "Gohan",
     lastname : "Goku",
   };
+
+  const posts = [
+    {
+      id : 1,
+      title : "Post 1",
+      content : "This blog is about me learning vite react and normal react at the same time!",
+    },{
+      id : 2,
+      title : "Post 2",
+      content : "This blog is about me learning vite react and normal react at the same time!",
+    },{
+      id : 3,
+      title : "Post 2",
+      content : "This blog is about me learning vite react and normal react at the same time!",
+    },
+  ];
 
   useEffect(() => {
     console.log("Value Updated")
@@ -54,6 +72,8 @@ function App() {
       <Import user = {userData}/>
 
       <LoginControl />
+
+      <Blog contents = {posts}/>
 
       
     </>
