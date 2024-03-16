@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react';
 import Koenigsegg from './images/Koenigsegg.png';
 import Clock from './Clock.js';
 import Import from './Import.js'
+import LoginControl from './LoginControl.js'
 
 function App() {
   const [value, setValue] = useState(false);
@@ -26,6 +27,12 @@ function App() {
     )
   }
 
+  const [show, setShow] = useState(true);
+
+  function toggle() {
+    setShow(!show);
+  }
+
 
   
   return (
@@ -40,11 +47,13 @@ function App() {
         {returname(userData)}
       </div>
 
+      <button onClick = {toggle}>Click to change time visibility</button>
 
-
-      <Clock />
+      {show ?  <Clock /> : "Nothing to display!!"}
 
       <Import user = {userData}/>
+
+      <LoginControl />
 
       
     </>
