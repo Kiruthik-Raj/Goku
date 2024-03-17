@@ -5,6 +5,7 @@ import Clock from './Clock.js';
 import Import from './Import.js'
 import LoginControl from './LoginControl.js'
 import Blog from './Blog.js'
+import Form from './Form.js'
 
 
 function App() {
@@ -74,6 +75,8 @@ function App() {
       <LoginControl />
 
       <Blog contents = {posts}/>
+
+      <Form />
 
       
     </>

@@ -27,3 +27,51 @@ body {
 .koenigsegg-image:hover{
   border: solid 4px #ccc;
 }
+
+#myform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+#myform label{
+  padding: 2px;
+  margin: 5px;
+  
+}
+
+#myform input{
+  width: 200px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+
+#myform textarea{
+  width: 500px;
+  height: 200px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  line-height: 1.25;
+}
+
+#myform button{
+  width: 150px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: border-radius box-shadow 1s ease-in ;
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+
+#myform button:hover{
+  cursor: pointer;
+  border-radius: 7px;
+  border: solid 1px #CCC;
+  box-shadow: 2px 2px 4px #ccc;
+}
