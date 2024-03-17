@@ -21,6 +21,8 @@ body {
   border: solid 1px transparent;
   border-radius: 5px;
   transition: border 0.15s ease-in-out;
+  width: 1880px;
+  height: 1080px;
 
 }
 
@@ -63,7 +65,7 @@ body {
   color: white;
   border-radius: 5px;
   margin-top: 10px;
-  transition: border-radius box-shadow 1s ease-in ;
+  transition: border-radius 0.15s ease-in-out ;
   padding: 10px 20px;
   font-size: 16px;
   
@@ -72,6 +74,6 @@ body {
 #myform button:hover{
   cursor: pointer;
   border-radius: 7px;
-  border: solid 1px #CCC;
-  box-shadow: 2px 2px 4px #ccc;
+  border: solid 2px #CCC;
+  
 }
