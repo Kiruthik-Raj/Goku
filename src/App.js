@@ -6,6 +6,7 @@ import Import from './Import.js'
 import LoginControl from './LoginControl.js'
 import Blog from './Blog.js'
 import Form from './Form.js'
+import ApiFetch from './ApiFetch.js';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       content : "This blog is about me learning vite react and normal react at the same time!",
     },{
       id : 3,
-      title : "Post 2",
+      title : "Post 3",
       content : "This blog is about me learning vite react and normal react at the same time!",
     },
   ];
@@ -77,6 +78,8 @@ function App() {
       <Blog contents = {posts}/>
 
       <Form />
+
+      <ApiFetch />
 
       
     </>

@@ -34,8 +34,8 @@ function Form()
                 <button type = "submit">Submit</button>
             </form>
 
-            <p>
-                {JSON.stringify(formContent, undefined, 2)}
+            <p className = "form-content-display-ptag">
+                Entered details are:   {JSON.stringify(formContent, undefined, 2)}
             </p>
         </div>
     )
